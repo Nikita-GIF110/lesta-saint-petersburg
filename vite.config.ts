@@ -7,14 +7,8 @@ export default defineConfig({
   resolve: {
     alias: {
       assets: "/src/assets",
+      apollo: "/src/apollo",
       core: "/src/core",
-      constants: "/src/constants",
-      helpers: "/src/helpers",
-      hooks: "/src/hooks",
-      modules: "/src/modules",
-      repositories: "/src/repositories",
-      shared: "/src/shared",
-      types: "/src/types/index.ts",
       styles: "/src/styles",
     },
   },
