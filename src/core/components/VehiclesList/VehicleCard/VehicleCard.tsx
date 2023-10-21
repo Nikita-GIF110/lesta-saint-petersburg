@@ -14,13 +14,15 @@ export const VehicleCard = (vehicle: Vehicle) => {
   const CardSx: SxProps = {
     position: "relative",
 
-    "&:hover": {
-      "& > [data-content='image']::before": {
-        opacity: 0.5,
-      },
+    [breakpoints.up("md")]: {
+      "&:hover": {
+        "& > [data-content='image']::before": {
+          opacity: 0.5,
+        },
 
-      "& > [data-content='description']": {
-        transform: "translateY(0)",
+        "& > [data-content='description']": {
+          transform: "translateY(0)",
+        },
       },
     },
   };
@@ -65,11 +67,11 @@ export const VehicleCard = (vehicle: Vehicle) => {
     transition: "transform 0.3s ease-in-out",
     backgroundColor: "#fff",
 
-    [breakpoints.down("sm")]: {
+    [breakpoints.down("md")]: {
       paddingTop: 0,
     },
 
-    [breakpoints.up("sm")]: {
+    [breakpoints.up("md")]: {
       position: "absolute",
       left: 0,
       bottom: 0,

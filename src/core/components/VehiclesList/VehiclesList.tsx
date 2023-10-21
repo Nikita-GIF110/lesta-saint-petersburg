@@ -26,7 +26,7 @@ export const VehiclesList = ({
     return (
       <Grid container spacing={2}>
         {getArrayOfLong(skeletonCount).map((i) => (
-          <Grid item xs={12} md={6} key={i}>
+          <Grid item xs={12} lg={6} key={i}>
             <Skeleton key={i} variant="rounded" height={282} />
           </Grid>
         ))}
